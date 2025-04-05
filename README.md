@@ -21,8 +21,3 @@ This portfolio reflects my passion for front-end development, design, and proble
 I work with building management systems and am now transitioning into front-end development, focusing on web technologies, user interfaces, and creative arts. 
 Through this portfolio, I aim to demonstrate my skills, creativity, and dedication to learning and improving.
 
-## How to Use
-
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/portfolio.git
