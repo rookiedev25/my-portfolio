@@ -3,6 +3,7 @@
     --text: #1d1d1f;
     --bg: #ffffff;
     --accent: #0071e3;
+    /* --accent: #000000; */
 }
 
 * {
@@ -25,11 +26,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-
-
-}
+a:hover {}
 
 header.navbar {
     position: sticky;
@@ -82,7 +79,7 @@ header.navbar {
 
 .hero-overlay h1 {
     font-size: clamp(3rem, 6vw, 5rem);
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -1px;
     margin-bottom: 1rem;
     line-height: 1.1;
