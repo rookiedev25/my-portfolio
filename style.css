@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* for responsive design: */
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #111;
+    line-height: 1.6;
+
+}
+
+header {
+    background: black;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.navbar nav a {
+    margin-left: 30px;
+    color: #111;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.navbar nav a:hover {
+    color: #555;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #333;
+} */
+
+section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+section about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.projectcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 20px;
+
+}
+
+.projectcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* to add scroll behavior smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+/* adding style to the scrollToTopBtn */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+    /* Hidden by default */
+}
+
+#profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #333;
+    float: right;
+    box-shadow: #333;
+}
+
+/* adding style to project-demo-images */
+.project_CaesarCipher,
+.project_Calculator {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    color: #555;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.project-item {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    background-color: #f0f0f0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}

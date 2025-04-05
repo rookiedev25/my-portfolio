@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styleApple.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-logo">MyPortfolio</div>
+        <nav class="nav-links">
+            <a href="#intro">Introduction</a>
+            <a href="#projects">Projects</a>
+            <a href="#videos">Videos</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SLIDER -->
+    <section class="hero" id="intro">
+        <div class="slider">
+            <div class="slide active"
+                style="background-image: url('https://www.apple.com/v/home/ak/images/heroes/iphone15-pro/hero_iphone15pro__i70z9oz3hj2i_large.jpg');">
+                <div class="hero-text fade-in">
+                    <h1>Hello, I'm [Your Name]</h1>
+                    <p>Creative Developer & Storyteller</p>
+                </div>
+            </div>
+            <div class="slide"
+                style="background-image: url('https://www.apple.com/v/home/ak/images/heroes/macbook-air-m3/hero_macbook_air__f6n9w2u4devm_large.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('https://www.apple.com/v/home/ak/images/heroes/ipad-pro/hero_ipad_pro__bpt7a9d8sh42_large.jpg');">
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects fade-in" id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Health Plan Generator</h3>
+                <p>A tool to create personalized diet & fitness plans.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="card">
+                <h3>Technical Writing Tool</h3>
+                <p>Automatically applies Siemens style guide to docs.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section class="videos fade-in" id="videos">
+        <h2>Short Films & Videos</h2>
+        <div class="grid">
+            <div class="card">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Video 1"
+                    allowfullscreen></iframe>
+                <p>Title: Exploring Creativity</p>
+            </div>
+            <div class="card">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Video 2"
+                    allowfullscreen></iframe>
+                <p>Title: Storytelling Through Film</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV SECTION -->
+    <section class="fade-in" id="cv">
+        <h2>Download My CV</h2>
+        <div class="center">
+            <a class="btn" href="your-cv-link.pdf" target="_blank">📄 View CV</a>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="fade-in" id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Your Name. Inspired by Apple.</p>
+    </footer>
+
+    <script src="styleApple.js"></script>
+</body>
+
+</html>
