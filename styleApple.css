@@ -215,6 +215,27 @@ footer {
     font-size: 0.8rem;
     color: #aaa;
 }
+/* button for demo-links */
+button{
+    margin: 10px 0;
+    background: var(--accent);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    border: none;
+    font-size: 0.9rem;
+}
+
+/* hover-button-links */
+button:hover{
+    background: #005ecb;
+    cursor: pointer;
+}
+
+.button-link{
+    color: white;
+}
+
 
 /* Back to top button */
 #backToTop {
